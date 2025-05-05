@@ -1,7 +1,6 @@
 {
   "name": "for-sale",
   "homepage": "https://sanchitbahl.github.io/for-sale/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
