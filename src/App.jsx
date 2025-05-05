@@ -1,33 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1 className="text-gray-200">Moving Sale at C2-503</h1>
+      <table className="table table-compact w-full flex-auto">
+        <thead>
+          <tr>
+            <th>Name & Price</th>
+            <th>Description</th>
+            <th>Photos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TV Unit<br/>INR 2000</td>
+            <td>TV Unit with storage (LxBxW)</td>
+            <td>
+              <img src="https://i.imgur.com/hvYicUM.jpeg" alt="TV Unit" className="w-32 h-32 object-cover" />
+              <img src="https://i.imgur.com/PdTxbXw.jpeg" alt="TV Unit" className="w-32 h-32 object-cover" />
+            </td>
+          </tr>
+          <tr>
+            <td>Dining Table<br/>INR 3000</td>
+            <td>Dining Table with 4 chairs (LxBxW)</td>
+            <td>
+              <img src="https://i.imgur.com/FoqpFAa.jpeg" alt="Dining Table" className="w-32 h-32 object-cover" />
+            </td>
+          </tr>
+          <tr>
+            <td>CAT Bookset (Set of 3)<br/>INR 1000</td>
+            <td>CAT Quantitative Aptitude by McGrawHill<br/>CAT Verbal Ability & Reading Comprehension by McGrawHill<br/>CAT Data Interpretation & Logical Reasoning by McGrawHill</td>
+            <td>
+              <img src="https://i.imgur.com/PdTxbXw.jpeg" alt="TV Unit" className="w-32 h-32 object-cover" />
+            </td>
+          </tr>
+          <tr>
+            <td>CAT Bookset (Set of 3)<br/>INR 1000</td>
+            <td>CAT Quantitative Aptitude by McGrawHill<br/>CAT Verbal Ability & Reading Comprehension by McGrawHill<br/>CAT Data Interpretation & Logical Reasoning by McGrawHill</td>
+            <td>
+              <img src="https://i.imgur.com/PdTxbXw.jpeg" alt="TV Unit" className="w-32 h-32 object-cover" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <footer className="footer footer-center p-4 bg-base-200 text-base-content">
+        <div>
+          <p>Call or Whatsapp: +91 7827967303</p>
+        </div>
+      </footer>
     </>
   )
 }
